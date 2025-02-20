@@ -17,6 +17,7 @@ if st.button("Generate Code"):
     Explain the reasoning behind code correlations or suggestions.
     If the code is not in Python, politely remind the user that you are a Python code review assistant.""")
     
+    
     if user_prompt:
         response = model.generate_content(user_prompt)
         st.write(response.text)
